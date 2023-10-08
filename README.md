@@ -1,0 +1,1 @@
+# cmake-vcpkg-sfml-demo
