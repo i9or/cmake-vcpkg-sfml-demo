@@ -1,7 +1,11 @@
 #include <SFML/Graphics.hpp>
 
 int main() {
-  sf::RenderWindow window{sf::VideoMode{320, 240}, "CMake/vcpkg/SFML Demo"};
+  sf::RenderWindow window{sf::VideoMode{640, 480}, "CMake/vcpkg/SFML Demo"};
+
+  sf::CircleShape shape{50.f};
+  shape.setFillColor(sf::Color::Cyan);
+  shape.setPosition(100.f, 100.f);
 
   while (window.isOpen()) {
     sf::Event event{};
@@ -17,6 +21,9 @@ int main() {
     }
 
     window.clear(sf::Color::Black);
+
+    window.draw(shape);
+
     window.display();
   }
 
