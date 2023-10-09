@@ -10,13 +10,18 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-build/*
-!build/.gitkeep
-
-bin/*
-!bin/.gitkeep
-
 .DS_Store
 .cache
 
 vcpkg_installed/
+
+.vs/
+out/
+
+# Preserve the build folder but not the contents
+build/*
+!build/.gitkeep
+
+# Preserve binary folder but not the contents
+bin/*
+!bin/.gitkeep
